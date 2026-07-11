@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Minato Namikaze AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div id="background"></div>
+
+
+<!-- MOBILE MENU -->
+
+<button id="menuBtn">
+☰
+</button>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+⚡ Minato AI
+
+</div>
+
+
+
+<button onclick="newChat()">
+➕ Nouvelle conversation
+</button>
+
+
+<button>
+💬 Historique
+</button>
+
+
+<button>
+⭐ Favoris
+</button>
+
+
+<button>
+🖼️ Images
+</button>
+
+
+<button>
+📂 Documents
+</button>
+
+
+<button onclick="openStudio()">
+🖥️ Studio
+</button>
+
+
+<button onclick="openDashboard()">
+📊 Dashboard
+</button>
+
+
+<button onclick="openPremium()">
+💎 Premium
+</button>
+
+
+<button onclick="openSettings()">
+⚙️ Paramètres
+</button>
+
+
+
+<div class="profile-mini">
+
+<img src="assets/logo.png">
+
+<div>
+
+<b>Chris st</b>
+
+<p>
+Propriétaire
+</p>
+
+</div>
+
+</div>
+
+
+
+</aside>
+
+
+
+
+
+<!-- APPLICATION -->
+
+
+<main class="app">
+
+
+
+<header class="topbar">
+
+
+<div class="ai-info">
+
+
+<img src="assets/logo.png">
+
+
+<div>
+
+<h2>
+Minato Namikaze
+</h2>
+
+
+<span>
+IA de Chris st
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+<button id="soundBtn">
+🔊
+</button>
+
+
+</header>
+
+
+
+
+
+
+<!-- CHAT -->
+
+
+<section id="chatBox"
+class="chat-box">
+
+
+<div class="message ai">
+
+
+<div class="avatar">
+🤖
+</div>
+
+
+<div class="bubble">
+
+Bonjour 👋
+
+Je suis <b>Minato Namikaze</b>.
+
+Comment puis-je t'aider aujourd'hui ?
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- IMAGE PREVIEW -->
+
+
+<div id="imagePreview">
+
+</div>
+
+
+
+
+
+
+<!-- WRITING AREA -->
+
+
+<footer class="input-area">
+
+
+<input
+type="file"
+id="imageInput"
+accept="image/*"
+hidden
+>
+
+
+
+<button onclick="uploadImage()">
+📎
+</button>
+
+
+
+
+<textarea
+id="prompt"
+placeholder="Écris ton message à Minato..."
+></textarea>
+
+
+
+
+<button
+id="sendBtn"
+onclick="sendMessage()">
+
+➤
+
+</button>
+
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- QUICK ACTIONS -->
+
+
+<div class="quick-actions">
+
+
+<button>
+Résumer
+</button>
+
+
+<button>
+Corriger
+</button>
+
+
+<button>
+Traduire
+</button>
+
+
+<button>
+Expliquer
+</button>
+
+
+<button>
+Code
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- SETTINGS PANEL -->
+
+
+<section id="settingsPanel"
+class="panel">
+
+
+<h2>
+⚙️ Paramètres
+</h2>
+
+
+<label>
+Thème
+</label>
+
+<select id="themeSelect">
+
+<option>
+Galaxy
+</option>
+
+<option>
+Matrix
+</option>
+
+<option>
+Cyberpunk
+</option>
+
+<option>
+Neon
+</option>
+
+</select>
+
+
+
+<label>
+Animations
+</label>
+
+
+<input type="checkbox" checked>
+
+
+<label>
+Musique
+</label>
+
+
+<input type="checkbox">
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- PREMIUM PANEL -->
+
+
+<section id="premiumPanel"
+class="panel premium">
+
+
+<h2>
+💎 Minato Premium
+</h2>
+
+
+<div class="premium-card">
+
+🌌 Thèmes exclusifs
+
+</div>
+
+
+<div class="premium-card">
+
+🧠 Mémoire avancée
+
+</div>
+
+
+<div class="premium-card">
+
+🎭 Assistants personnalisés
+
+</div>
+
+
+<div class="premium-card">
+
+📊 Statistiques avancées
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- DASHBOARD -->
+
+
+<section id="dashboardPanel"
+class="panel">
+
+
+<h2>
+📊 Dashboard
+</h2>
+
+
+<div class="stats">
+
+
+<div>
+Messages
+<b id="messagesCount">
+0
+</b>
+</div>
+
+
+<div>
+Images
+<b id="imagesCount">
+0
+</b>
+</div>
+
+
+
+<div>
+Mots générés
+<b id="wordsCount">
+0
+</b>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+<script src="chat.js"></script>
+
+<script src="settings.js"></script>
+
+<script src="premium.js"></script>
+
+<script src="dashboard.js"></script>
+
+
+</body>
+
+</html>
