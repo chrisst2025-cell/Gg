@@ -1,0 +1,19 @@
+{
+  "name":"Minato Namikaze",
+
+  "owner":"Chris st",
+
+  "settings":{
+
+    "longAnswer":true,
+
+    "memory":true,
+
+    "vision":true,
+
+    "imageGenerator":true,
+
+    "highlightWords":true
+
+  }
+}
