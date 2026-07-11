@@ -951,3 +951,75 @@ width:auto;
 
 
 }
+
+.premium-badge{
+
+margin-left:auto;
+
+padding:5px 10px;
+
+border-radius:20px;
+
+background:
+linear-gradient(45deg,#ffd700,#8b5cf6);
+
+font-size:12px;
+
+}
+
+
+
+.hologram{
+
+filter:
+
+drop-shadow(0 0 20px cyan);
+
+}
+
+
+
+.rgb-effect *{
+
+animation:
+
+rgbGlow 3s infinite;
+
+}
+
+
+
+.glitch{
+
+animation:
+
+glitch .3s infinite;
+
+}
+
+
+
+@keyframes glitch{
+
+
+0%{
+transform:translate(0);
+}
+
+
+25%{
+transform:translate(2px,-2px);
+}
+
+
+50%{
+transform:translate(-2px,2px);
+}
+
+
+100%{
+transform:translate(0);
+}
+
+
+}
