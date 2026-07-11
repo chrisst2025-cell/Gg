@@ -28,7 +28,7 @@ app.use(express.urlencoded({
 
 const frontendPath = path.join(
     __dirname,
-    "../frontend"
+    "frontend"
 );
 
 
@@ -56,7 +56,6 @@ const admin = require("./api/admin");
 // =====================
 // ROUTES API
 // =====================
-
 
 app.get(
     "/api/chat",
@@ -96,15 +95,12 @@ app.get(
 
 
 
-
 // =====================
-// FRONTEND ROUTER
-// EXPRESS 5 FIX
+// PAGE PRINCIPALE
+// EXPRESS 5
 // =====================
-
 
 app.get("/*splat", (req, res) => {
-
 
     res.sendFile(
         path.join(
@@ -113,24 +109,18 @@ app.get("/*splat", (req, res) => {
         )
     );
 
-
 });
 
 
 
 
-
-
 // =====================
-// ERROR HANDLER
+// ERREUR SERVEUR
 // =====================
-
 
 app.use((err, req, res, next) => {
 
-
     console.error(err);
-
 
     res.status(500).json({
 
@@ -140,21 +130,16 @@ app.use((err, req, res, next) => {
 
     });
 
-
 });
 
 
 
 
-
-
 // =====================
-// START SERVER
+// START
 // =====================
-
 
 app.listen(PORT, () => {
-
 
     console.log(`
 
